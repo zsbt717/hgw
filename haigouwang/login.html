@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/navTab.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navJson.js" type="text/javascript" charset="utf-8"></script>
+		<script src="baseJs/navShow.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="header-top-wrap">
+			<div class="header-top">
+				<div class="ht-l">
+					你好,欢迎来到嗨购网！   
+					<a href="">登录</a>
+					<a href="">注册</a>
+				</div>
+				<div class="ht-r">
+					<a href="" class="mine" id="mine">
+						我的账户
+						<em></em>
+					</a>
+					<div class="cart-list" id="cart-list">
+							<a href="">我的订单</a>
+							<a href="">我的优惠卷</a>
+							<a href="">我的积分</a>
+							<a href="">我的收藏</a>
+					</div>
+					<a href="">购物车 <span>0</span> 件 </a>
+					<a href="">客户服务</a>
+					<a href="">关注嗨购</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="head">
+				<div class="hd-l">
+				<a href="#" id="home">
+					<img src="img/pic1.jpg" alt="" />
+				</a>
+				</div>
+				<div class="hd-r">
+					<div class="hdr-l">
+						<form action="" class="seach-form">
+							<input type="text" id="search-txt" value="夏季防晒、美白、补水" />
+							<input type="button" id="search-btn" value="" />
+						</form>
+						<p>
+								<a href="">爽肤水</a>
+								<a href="">面霜</a>
+								<a href="">洗面奶</a>
+								<a href="">香氛</a>
+								<a href="">眼霜</a>
+								<a href="">唇膏</a>
+								<a href="">护肤套装</a>
+						</p>
+					</div>
+					<a href="#" class="cart-box">
+						<div class="cart">去购物车结算</div>
+						<div class="popr"><span></span></div>
+					</a>
+					
+				</div>
+			</div>
+			
+		</header>
+		
+				<div class="nav-wrap">
+			<nav>
+					<span class="all" id="all">全部商品分类
+						<div class="navTab" id="navTab">
+							
+							<div class="navtab1" id="navtab1">
+								<a class="first">护肤</a>
+								<br />
+								<a href="">洁面</a>
+								<a href="">化妆水</a>
+								<a href="">精华</a>
+								<a href="">乳液/面霜</a>
+								<a href="">面膜</a>
+								<a href="">眼部护理</a>
+								<a href="">T区/唇部护理</a>
+								<a href="">护肤套装</a>
+								
+								<div class="navBox" id="navBox">
+									<div class="navBox-l" id="navBox-l">
+										<script type="text/html" id="navBoxL">
+											{{each title as item}}
+												<div class="navBoxCont">
+													<a class="two">{{item.title}}</a>
+													<br />
+													<a href="">{{item.cont1}}</a>
+													<a href="">{{item.cont2}}</a>
+													<a href="">{{item.cont3}}</a>
+													<a href="">{{item.cont4}}</a>
+													<a href="">{{item.cont5}}</a>
+													<a href="">{{item.cont6}}</a>
+												</div>
+											{{/each}}
+										</script>
+										
+									</div>
+									
+									
+									<div class="navBox-c" id="navBox-c">
+										
+										<script type="text/html" id="navBoxC">
+											
+												{{each cont as item}}
+												<div class="navBc">
+												<a class="three">{{item.title}}</a>
+												<a href="">{{item.cont1}}</a>
+												<a href="">{{item.cont2}}</a>
+												<a href="">{{item.cont3}}</a>
+												<a href="">{{item.cont4}}</a>
+												<a href="">{{item.cont5}}</a>
+												<a href="">{{item.cont6}}</a>
+												</div>
+												{{/each}}
+											
+										</script>
+										
+										
+									</div>
+									<div class="navBox-r">
+										<img src="img/pic-1.jpg"/>
+										<span id="close">X</span>
+									</div>
+								</div>
+							</div>
+							<div class="navtab1" id="navtab2">
+								<a class="first">彩妆</a>
+								<br />
+								<a href="">洁面</a>
+								<a href="">化妆水</a>
+								<a href="">精华</a>
+								<a href="">乳液/面霜</a>
+								<a href="">面膜</a>
+								<a href="">眼部护理</a>
+								<a href="">T区/唇部护理</a>
+								<a href="">护肤套装</a>
+							</div>
+							<div class="navtab1" id="navtab3">
+								<a class="first">香氛</a>
+								<br />
+								<a href="">女士香水</a>
+								<a href="">中性香水</a>
+								<a href="">Q版香水</a>
+								<a href="">男士香水</a>
+								<a href="">香体露</a>
+								<a href="">精油</a>
+								<a href="">套装</a>
+							</div>
+							<div class="navtab1" id="navtab4">
+								<a class="first">其他</a>
+								<br />
+								<a href="">女士香水</a>
+								<a href="">中性香水</a>
+								<a href="">Q版香水</a>
+								<a href="">男士香水</a>
+								<a href="">香体露</a>
+								<a href="">精油</a>
+								<a href="">套装</a>
+								<a href="">Q版香水</a>
+								
+							</div>
+						</div>
+					</span>
+					<a href="" class="hover">首页</a>
+					<a href="">大牌小样</a>
+					<a href="">今日抢购</a>
+					<a href="">品牌区</a>
+					<a href="">消费者告知</a>
+			</nav>
+		</div>
+		
+			
+			<!--登录主题部分开始-->
+			<div class="main-wrap">
+				<div class="main">
+					<div class="login-box">
+						<div class="user_login">用户登录</div>
+						<form action="" class="login_form">
+							<input type="tel" id="uTel" placeholder="手机号" name="tel"/>
+							<input type="password" name="pwd" placeholder="填写密码" id="pwd" />
+							
+							<div class="others">
+								<a href=""><img src="img/weixin.png" alt="" /></a>
+								<a href=""><img src="img/weibo.png" alt="" /></a>
+								<a href=""><img src="img/qqlogin.png" alt="" /></a>
+							</div>
+							
+							<a href="javascript:;" class="login" id="login">登录</a>
+							<input type="checkbox" name="" id="knewpsd" value="" checked="checked"/>记住密码
+							<input type="checkbox" name="" id="denglu" value="" checked="checked"/>两周内免登录
+						</form>
+						<div class="bot">
+							<a href="">忘记密码</a>
+							<a href="">免费注册</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!--登录主题部分结束-->
+			<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/Ajax.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				
+				window.onload = function(){
+					
+				
+				var oknew = document.getElementById("denglu");
+				var knewpsd = document.getElementById("knewpsd");
+				var oTel = document.getElementById("uTel");
+				var opsd = document.getElementById("pwd");
+				var olg = document.getElementsByClassName("login")[0];
+				var tmp = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+				
+				if(knewpsd.checked){
+					if(getCookie("tel")){
+						oTel.value = getCookie("tel");
+						opsd.value = getCookie("password");
+						
+						var sure = confirm("确定要跳转到首页吗？");
+						if(sure){
+							location.href = "index.html";
+						}
+						
+					}
+				}
+				
+				
+				
+				olg.onclick = function(){
+					
+					var tel = oTel.value;
+					var psd = opsd.value;
+					
+					if(tmp.test(tel)){
+							if(oknew.checked){
+								//console.log(psd);
+								setCookie("tel",tel,14);
+								setCookie("psw",psd,14);
+							}
+						}else{
+							alert("手机号错误")
+						}
+						
+					
+						
+						
+						
+					}
+				
+				
+					
+					
+					
+				}
+				
+				
+			</script>
+			
+		<div class="bottom-wrap">
+			<div class="bottom">
+				<div class="info">
+					<p><span></span>在线客服</p>
+					<p><span></span>kf@higoo.com</p>
+					<p class="tel"><span></span>4007-600-600 <br />
+						<em>AM 08:00-PM 24:00</em>
+					</p>
+				</div>
+				
+				<div class="aList First">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				
+				<div class="aList">
+					<a href="" class="first">购物指南</a>
+					<a href="">购物流程</a>
+					<a href="">常见问题</a>
+					<a href="">通关关税</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">支付/配送</a>
+					<a href="">配送说明</a>
+					<a href="">支付方式</a>
+					<a href="">运费标准</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				
+				
+				<dl class="weixin">
+					<dt>嗨购微信</dt>
+					<dd>
+						<img src="img/weixin.jpg"/>
+					</dd>
+					
+					<dd>扫一扫 品质在手</dd>
+				</dl>
+			</div>
+		</div>
+		
+		<div class="posiBox" id="posiBox">
+			<img src="img/p2.jpg"/>
+			<img src="img/p1.jpg"/>
+			<img src="img/p3.jpg"/>
+			<img src="img/p4.jpg" id="goTop"/>
+		</div>
+		<!--footer-->
+		<footer>
+			<div class="fot">
+				<img src="img/footer.jpg"/>
+			</div>
+		</footer>
+	</body>
+</html>

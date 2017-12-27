@@ -1,0 +1,116 @@
+{
+	"goods":[
+		{
+			"shopImg":"img/good-01.jpg",
+			"shopInfo":"伊丽莎白雅顿第五大道喷式淡香水 30ml",
+			"newPirc":"119.00",
+			"oldPirc":"119.00",
+			"id":"1001"
+			
+		},
+		{
+			"shopImg":"img/good-02.jpg",
+			"shopInfo":"范思哲 至甄粉水晶3件套  香水90+身体乳100+手包EDP",
+			"newPirc":"399.00",
+			"oldPirc":"459.00",
+			"id":"1002"
+		},
+		{
+			"shopImg":"img/good-03.jpg",
+			"shopInfo":"范思哲（versace）PourHomme迷你男装淡香水 5ml",
+			"newPirc":"59.00",
+			"oldPirc":"69.00",
+			"id":"1003"
+		},
+		{
+			"shopImg":"img/good-04.jpg",
+			"shopInfo":"大卫杜夫冰冰水玫瑰女士淡香水100ml 无塑封",
+			"newPirc":"179.00",
+			"oldPirc":"199.00",
+			"id":"1004"
+		},
+		{
+			"shopImg":"img/good-01.jpg",
+			"shopInfo":"伊丽莎白雅顿第五大道喷式淡香水 30ml",
+			"newPirc":"119.00",
+			"oldPirc":"119.00",
+			"id":"1005"
+		},
+		{
+			"shopImg":"img/good-02.jpg",
+			"shopInfo":"范思哲 至甄粉水晶3件套  香水90+身体乳100+手包EDP",
+			"newPirc":"399.00",
+			"oldPirc":"459.00",
+			"id":"1006"
+		},
+		{
+			"shopImg":"img/good-03.jpg",
+			"shopInfo":"范思哲（versace）PourHomme迷你男装淡香水 5ml",
+			"newPirc":"59.00",
+			"oldPirc":"69.00",
+			"id":"1007"
+		},
+		{
+			"shopImg":"img/good-04.jpg",
+			"shopInfo":"大卫杜夫冰冰水玫瑰女士淡香水100ml 无塑封",
+			"newPirc":"179.00",
+			"oldPirc":"199.00",
+			"id":"1008"
+		},
+		{
+			"shopImg":"img/good-01.jpg",
+			"shopInfo":"伊丽莎白雅顿第五大道喷式淡香水 30ml",
+			"newPirc":"119.00",
+			"oldPirc":"119.00",
+			"id":"1009"
+		},
+		{
+			"shopImg":"img/good-02.jpg",
+			"shopInfo":"范思哲 至甄粉水晶3件套  香水90+身体乳100+手包EDP",
+			"newPirc":"399.00",
+			"oldPirc":"459.00",
+			"id":"1010"
+		},
+		{
+			"shopImg":"img/good-03.jpg",
+			"shopInfo":"范思哲（versace）PourHomme迷你男装淡香水 5ml",
+			"newPirc":"59.00",
+			"oldPirc":"69.00",
+			"id":"1011"
+		},
+		{
+			"shopImg":"img/good-04.jpg",
+			"shopInfo":"大卫杜夫冰冰水玫瑰女士淡香水100ml 无塑封",
+			"newPirc":"179.00",
+			"oldPirc":"199.00",
+			"id":"1012"
+			
+		}
+	]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

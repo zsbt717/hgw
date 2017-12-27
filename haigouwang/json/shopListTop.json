@@ -1,0 +1,37 @@
+{
+	"feilei":{
+		"cont1":"面膜贴",
+		"cont2":"水洗面膜",
+		"cont3":"免洗面膜"
+	},
+	"pinpai":{
+		"cont1":"labolabol城野医生",
+		"cont2":"batite碧曼丝",
+		"cont3":"DHC",
+		"cont4":"梦妆"
+	},
+	"color":{
+		"col1":"蓝",
+		"col2":"绿",
+		"col3":"黑",
+		"col4":"白",
+		"col5":"黄色",
+		"col6":"紫色",
+		"col7":"浅灰色",
+		"col8":"红色",
+		"col9":"黑色"
+	},
+	"jhl":{
+		"cont1":"125ml",
+		"cont2":"150ml",
+		"cont3":"200ml",
+		"cont4":"20ml",
+		"cont5":"25ml",
+		"cont6":"55ml",
+		"cont7":"5ml以下",
+		"cont1":"75ml",
+		"cont1":"45ml"
+	}
+	
+
+}

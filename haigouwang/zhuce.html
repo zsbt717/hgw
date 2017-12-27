@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/navTab.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navJson.js" type="text/javascript" charset="utf-8"></script>
+		<script src="baseJs/navShow.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header-top-wrap">
+			<div class="header-top">
+				<div class="ht-l">
+					你好,欢迎来到嗨购网！   
+					<a href="">登录</a>
+					<a href="">注册</a>
+				</div>
+				<div class="ht-r">
+					<a href="" class="mine" id="mine">
+						我的账户
+						<em></em>
+					</a>
+					<div class="cart-list" id="cart-list">
+							<a href="">我的订单</a>
+							<a href="">我的优惠卷</a>
+							<a href="">我的积分</a>
+							<a href="">我的收藏</a>
+					</div>
+					<a href="">购物车 <span>0</span> 件 </a>
+					<a href="">客户服务</a>
+					<a href="">关注嗨购</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="head">
+				<div class="hd-l">
+				<a href="#" id="home">
+					<img src="img/pic1.jpg" alt="" />
+				</a>
+				</div>
+				<div class="hd-r">
+					<div class="hdr-l">
+						<form action="" class="seach-form">
+							<input type="text" id="search-txt" value="夏季防晒、美白、补水" />
+							<input type="button" id="search-btn" value="" />
+						</form>
+						<p>
+								<a href="">爽肤水</a>
+								<a href="">面霜</a>
+								<a href="">洗面奶</a>
+								<a href="">香氛</a>
+								<a href="">眼霜</a>
+								<a href="">唇膏</a>
+								<a href="">护肤套装</a>
+						</p>
+					</div>
+					<a href="#" class="cart-box">
+						<div class="cart">去购物车结算</div>
+						<div class="popr"><span></span></div>
+					</a>
+					
+				</div>
+			</div>
+			
+		</header>
+		
+				<div class="nav-wrap">
+			<nav>
+					<span class="all" id="all">全部商品分类
+						<div class="navTab" id="navTab">
+							
+							<div class="navtab1" id="navtab1">
+								<a class="first">护肤</a>
+								<br />
+								<a href="">洁面</a>
+								<a href="">化妆水</a>
+								<a href="">精华</a>
+								<a href="">乳液/面霜</a>
+								<a href="">面膜</a>
+								<a href="">眼部护理</a>
+								<a href="">T区/唇部护理</a>
+								<a href="">护肤套装</a>
+								
+								<div class="navBox" id="navBox">
+									<div class="navBox-l" id="navBox-l">
+										<script type="text/html" id="navBoxL">
+											{{each title as item}}
+												<div class="navBoxCont">
+													<a class="two">{{item.title}}</a>
+													<br />
+													<a href="">{{item.cont1}}</a>
+													<a href="">{{item.cont2}}</a>
+													<a href="">{{item.cont3}}</a>
+													<a href="">{{item.cont4}}</a>
+													<a href="">{{item.cont5}}</a>
+													<a href="">{{item.cont6}}</a>
+												</div>
+											{{/each}}
+										</script>
+										
+									</div>
+									
+									
+									<div class="navBox-c" id="navBox-c">
+										
+										<script type="text/html" id="navBoxC">
+											
+												{{each cont as item}}
+												<div class="navBc">
+												<a class="three">{{item.title}}</a>
+												<a href="">{{item.cont1}}</a>
+												<a href="">{{item.cont2}}</a>
+												<a href="">{{item.cont3}}</a>
+												<a href="">{{item.cont4}}</a>
+												<a href="">{{item.cont5}}</a>
+												<a href="">{{item.cont6}}</a>
+												</div>
+												{{/each}}
+											
+										</script>
+										
+										
+									</div>
+									<div class="navBox-r">
+										<img src="img/pic-1.jpg"/>
+										<span id="close">X</span>
+									</div>
+								</div>
+							</div>
+							<div class="navtab1" id="navtab2">
+								<a class="first">彩妆</a>
+								<br />
+								<a href="">洁面</a>
+								<a href="">化妆水</a>
+								<a href="">精华</a>
+								<a href="">乳液/面霜</a>
+								<a href="">面膜</a>
+								<a href="">眼部护理</a>
+								<a href="">T区/唇部护理</a>
+								<a href="">护肤套装</a>
+							</div>
+							<div class="navtab1" id="navtab3">
+								<a class="first">香氛</a>
+								<br />
+								<a href="">女士香水</a>
+								<a href="">中性香水</a>
+								<a href="">Q版香水</a>
+								<a href="">男士香水</a>
+								<a href="">香体露</a>
+								<a href="">精油</a>
+								<a href="">套装</a>
+							</div>
+							<div class="navtab1" id="navtab4">
+								<a class="first">其他</a>
+								<br />
+								<a href="">女士香水</a>
+								<a href="">中性香水</a>
+								<a href="">Q版香水</a>
+								<a href="">男士香水</a>
+								<a href="">香体露</a>
+								<a href="">精油</a>
+								<a href="">套装</a>
+								<a href="">Q版香水</a>
+								
+							</div>
+						</div>
+					</span>
+					<a href="" class="hover">首页</a>
+					<a href="">大牌小样</a>
+					<a href="">今日抢购</a>
+					<a href="">品牌区</a>
+					<a href="">消费者告知</a>
+			</nav>
+		</div>
+		
+			<!--登录主题部分开始-->
+			<div class="zc-box-wrap">
+				<div class="zc-box">
+					<h3>用户注册</h3>
+					
+					
+					<label for="tel"><span class="red">*</span>登录手机:</label>
+					<input type="tel" name="" id="tel" placeholder="11位手机号" /> <br />
+					
+					
+					<label for="pwd"><span class="red">*</span>密码:</label>
+					<input type="password" name="" id="pwd" placeholder="输入密码" />  <br />
+					
+					<label for="pwd1"><span class="red">*</span>确认密码:</label>
+					<input type="password" name="" id="pwd1" placeholder="再次输入密码" /> <br />
+					
+					<label for="txt"><span class="red">*</span>验证码:</label>
+					<input type="text" id="txt" placeholder="填写验证码" /> 
+					<span class="yzm">验证码</span><span class="click">看不清楚？换一换</span> <br />
+					<label for="email">验证码:</label>
+					<input type="text" id="email" value="" /> 
+					<span class="mobile">获取手机验证码</span> <br />
+					
+					<input type="checkbox" id="sure" /><span class="last">我已经阅读并同意 <a href="" class="hot">会员注册协议</a> 和 <a href="" class="hot">隐私保护政策</a></span><br />
+					<a href="javascript:;" id="btn">注&nbsp;&nbsp;册</a>
+					
+				</div>
+				
+				<div class="login">
+					已有账号直接登录
+					<a href="login.html" id="strap">转到登录页</a>
+				</div>
+			
+			</div>
+			
+			<!--登录主题部分结束-->
+			<div class="bottom-wrap">
+			<div class="bottom">
+				<div class="info">
+					<p><span></span>在线客服</p>
+					<p><span></span>kf@higoo.com</p>
+					<p class="tel"><span></span>4007-600-600 <br />
+						<em>AM 08:00-PM 24:00</em>
+					</p>
+				</div>
+				
+				<div class="aList First">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				
+				<div class="aList">
+					<a href="" class="first">购物指南</a>
+					<a href="">购物流程</a>
+					<a href="">常见问题</a>
+					<a href="">通关关税</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">支付/配送</a>
+					<a href="">配送说明</a>
+					<a href="">支付方式</a>
+					<a href="">运费标准</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				
+				
+				<dl class="weixin">
+					<dt>嗨购微信</dt>
+					<dd>
+						<img src="img/weixin.jpg"/>
+					</dd>
+					
+					<dd>扫一扫 品质在手</dd>
+				</dl>
+			</div>
+		</div>
+		
+		<div class="posiBox" id="posiBox">
+			<img src="img/p2.jpg"/>
+			<img src="img/p1.jpg"/>
+			<img src="img/p3.jpg"/>
+			<img src="img/p4.jpg" id="goTop"/>
+		</div>
+		<!--footer-->
+		<footer>
+			<div class="fot">
+				<img src="img/footer.jpg"/>
+			</div>
+		</footer>
+	</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		var oTel = document.getElementById("tel");
+		var oldpsd = document.getElementById("pwd");
+		var newpsd = document.getElementById("pwd1");
+		var yzmTxt = document.getElementById("txt");
+		var yzm = document.getElementsByClassName("yzm")[0];
+		var myClick = document.getElementsByClassName("click")[0];
+		var myPhone = document.getElementsByClassName("mobile")[0];
+		var agreen = document.getElementById("sure");
+		var oBtn = document.getElementById("btn");
+		
+		var tmp = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+		var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+		var arr1=[];
+	for(var i=0;i<4;i++){
+			var m =Math.round(Math.random()*35); 
+			
+			arr1.push(arr[m]);
+		}
+		//console.log(arr1.join("").toUpperCase());
+		var str = arr1.join("").toUpperCase();
+		yzm.innerText = str;
+	myClick.onclick = function(){
+		arr1=[];
+		for(var i=0;i<4;i++){
+			var m =Math.round(Math.random()*35); 
+			
+			arr1.push(arr[m]);
+		}
+		//console.log(arr1.join("").toUpperCase());
+		var str = arr1.join("").toUpperCase();
+		yzm.innerText = str;
+	}
+	
+	myPhone.onclick = function(){
+		alert("已经向您发送短信,请注意查收！");
+	}
+	
+	oBtn.onclick = function(){
+		if(oTel.value == "" || oldpsd.value == "" || newpsd.value == ""
+			|| yzmTxt.value== ""
+		){
+			alert("星号内容不能为空！");
+		}else{
+			if(YZ(tmp,oTel)){
+				console.log(1);
+				
+				
+				if(YZMM(oldpsd,newpsd)){
+					console.log(2);
+					if(YZM(yzmTxt,yzm)){
+						console.log(3);
+						
+						if(agreen.checked){
+							console.log(4);
+							setCookie("tel",oTel.value,14);
+							setCookie("psw",oldpsd.value,14);
+							location.href = "login.html";
+							
+						}else{
+							alert("请阅读会员注册协议 和 隐私保护政策");
+						}
+						
+					}else{
+						alert("验证码错误");
+					}
+					
+					
+				}else{
+					alert("密码错误");
+				}
+				
+				
+			}else{
+				alert("手机号不正确");
+			}
+		}
+		
+	}
+	
+	
+	function YZ(reg,val){
+		if(reg.test(val.value)){
+			return true;
+		}
+		
+		return false;
+	}
+	
+	function YZMM(old,nd){
+		if(old.value == nd.value){
+			return true;
+		}
+		return false;
+	}
+	
+	function YZM(txt,yzm){
+		if(txt.value.toUpperCase() == yzm.innerText ){
+			return true;
+		}
+		return false;
+	}
+	
+	
+}
+</script>

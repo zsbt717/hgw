@@ -1,0 +1,90 @@
+#navTab {
+  display: none; }
+
+.zc-box-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.zc-box {
+  float: left;
+  height: 502px;
+  width: 626px;
+  border: 2px solid #cccccc;
+  margin-bottom: 10px; }
+  .zc-box h3 {
+    width: 606px;
+    height: 44px;
+    border-bottom: 1px solid #cccccc;
+    color: #1566c0;
+    font-size: 23px;
+    line-height: 44px;
+    padding-left: 20px;
+    font-weight: 800;
+    margin-bottom: 10px; }
+  .zc-box label {
+    float: left;
+    width: 140px;
+    text-align: right;
+    padding-right: 8px;
+    margin-top: 8px; }
+  .zc-box .red {
+    color: #f24585; }
+  .zc-box input {
+    margin-bottom: 30px;
+    height: 28px;
+    border: 1px solid #CCCCCC;
+    text-indent: 12px; }
+  .zc-box #sure {
+    margin-left: 148px;
+    float: left;
+    margin-top: -5px; }
+  .zc-box .last {
+    margin-top: 10px; }
+  .zc-box #btn {
+    display: block;
+    width: 80px;
+    height: 37px;
+    background-color: #821081;
+    line-height: 37px;
+    color: #fff;
+    margin-top: 37px;
+    text-align: center;
+    margin-left: 148px; }
+  .zc-box .mobile {
+    width: 128px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #821081;
+    display: inline-block;
+    cursor: pointer; }
+  .zc-box .yzm {
+    display: inline-block;
+    width: 65px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    line-height: 25px;
+    margin-right: 5px; }
+  .zc-box .click, .zc-box .hot {
+    cursor: pointer;
+    color: #0563c3; }
+  .zc-box .click:hover, .zc-box .hot:hover {
+    color: crimson; }
+
+.login {
+  float: right;
+  margin-top: 200px; }
+  .login #strap {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    background-color: #821081;
+    display: inline-block; }
+
+/*# sourceMappingURL=zhuce.css.map */

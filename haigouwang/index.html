@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>index</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/startMove.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/template.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mineout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navTab.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/navJson.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/goTop.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="header-top-wrap">
+			<div class="header-top">
+				<div class="ht-l">
+					你好,欢迎来到嗨购网！   
+					<a href="zhuce.html">登录</a>
+					<a href="login.html">注册</a>
+				</div>
+				<div class="ht-r">
+					<a href="" class="mine" id="mine">
+						我的账户
+						<em></em>
+					</a>
+					<div class="cart-list" id="cart-list">
+							<a href="shopcart.html">我的订单</a>
+							<a href="">我的优惠卷</a>
+							<a href="">我的积分</a>
+							<a href="">我的收藏</a>
+					</div>
+					<a href="shopcart.html">购物车 <span>0</span> 件 </a>
+					<a href="">客户服务</a>
+					<a href="">关注嗨购</a>
+				</div>
+			</div>
+		</div>
+		<header>
+			<div class="head">
+				<div class="hd-l">
+				<a href="index.html" id="home">
+					<img src="img/pic1.jpg" alt="" />
+				</a>
+				</div>
+				<div class="hd-r">
+					<div class="hdr-l">
+						<form action="" class="seach-form">
+							<input type="text" id="search-txt" value="夏季防晒、美白、补水" />
+							<input type="button" id="search-btn" value="" />
+						</form>
+						<p>
+								<a href="shoplist.html">爽肤水</a>
+								<a href="shoplist.html">面霜</a>
+								<a href="shoplist.html">洗面奶</a>
+								<a href="shoplist.html">香氛</a>
+								<a href="shoplist.html">眼霜</a>
+								<a href="shoplist.html">唇膏</a>
+								<a href="shoplist.html">护肤套装</a>
+						</p>
+					</div>
+					<a href="shopcart.html" class="cart-box">
+						<div class="cart">去购物车结算</div>
+						<div class="popr"><span></span></div>
+					</a>
+					
+				</div>
+			</div>
+			
+		</header>
+		
+		<div class="nav-wrap">
+			<nav>
+					<span class="all" id="all">全部商品分类
+						<div class="navTab" id="navTab">
+							
+							<div class="navtab1" id="navtab1">
+								<a class="first">护肤</a>
+								<br />
+								<a href="shoplist.html">洁面</a>
+								<a href="shoplist.html">化妆水</a>
+								<a href="shoplist.html">精华</a>
+								<a href="shoplist.html">乳液/面霜</a>
+								<a href="shoplist.html">面膜</a>
+								<a href="shoplist.html">眼部护理</a>
+								<a href="shoplist.html">T区/唇部护理</a>
+								<a href="shoplist.html">护肤套装</a>
+								
+								<div class="navBox" id="navBox">
+									<div class="navBox-l" id="navBox-l">
+										<script type="text/html" id="navBoxL">
+											{{each title as item}}
+												<div class="navBoxCont">
+													<a class="two">{{item.title}}</a>
+													<br />
+													<a href="shoplist.html">{{item.cont1}}</a>
+													<a href="shoplist.html">{{item.cont2}}</a>
+													<a href="shoplist.html">{{item.cont3}}</a>
+													<a href="shoplist.html">{{item.cont4}}</a>
+													<a href="shoplist.html">{{item.cont5}}</a>
+													<a href="shoplist.html">{{item.cont6}}</a>
+												</div>
+											{{/each}}
+										</script>
+										
+									</div>
+									
+									
+									<div class="navBox-c" id="navBox-c">
+										
+										<script type="text/html" id="navBoxC">
+											
+												{{each cont as item}}
+												<div class="navBc">
+												<a class="three">{{item.title}}</a>
+												<a href="shoplist.html">{{item.cont1}}</a>
+												<a href="shoplist.html">{{item.cont2}}</a>
+												<a href="shoplist.html">{{item.cont3}}</a>
+												<a href="shoplist.html">{{item.cont4}}</a>
+												<a href="shoplist.html">{{item.cont5}}</a>
+												<a href="shoplist.html">{{item.cont6}}</a>
+												</div>
+												{{/each}}
+											
+										</script>
+										
+										
+									</div>
+									<div class="navBox-r">
+										<img src="img/pic-1.jpg"/>
+										<span id="close">X</span>
+									</div>
+								</div>
+							</div>
+							<div class="navtab1" id="navtab2">
+								<a class="first">彩妆</a>
+								<br />
+								<a href="shoplist.html">洁面</a>
+								<a href="shoplist.html">化妆水</a>
+								<a href="shoplist.html">精华</a>
+								<a href="shoplist.html">乳液/面霜</a>
+								<a href="shoplist.html">面膜</a>
+								<a href="shoplist.html">眼部护理</a>
+								<a href="shoplist.html">T区/唇部护理</a>
+								<a href="shoplist.html">护肤套装</a>
+							</div>
+							<div class="navtab1" id="navtab3">
+								<a class="first">香氛</a>
+								<br />
+								<a href="shoplist.html">女士香水</a>
+								<a href="shoplist.html">中性香水</a>
+								<a href="shoplist.html">Q版香水</a>
+								<a href="shoplist.html">男士香水</a>
+								<a href="shoplist.html">香体露</a>
+								<a href="shoplist.html">精油</a>
+								<a href="shoplist.html">套装</a>
+							</div>
+							<div class="navtab1" id="navtab4">
+								<a class="first">其他</a>
+								<br />
+								<a href="shoplist.html">女士香水</a>
+								<a href="shoplist.html">中性香水</a>
+								<a href="shoplist.html">Q版香水</a>
+								<a href="shoplist.html">男士香水</a>
+								<a href="shoplist.html">香体露</a>
+								<a href="shoplist.html">精油</a>
+								<a href="shoplist.html">套装</a>
+								<a href="shoplist.html">Q版香水</a>
+								
+							</div>
+						</div>
+					</span>
+					<a href="index.html" class="hover">首页</a>
+					<a href="">大牌小样</a>
+					<a href="">今日抢购</a>
+					<a href="">品牌区</a>
+					<a href="">消费者告知</a>
+			</nav>
+		</div>
+		
+		<!--公用部分结束-->
+		
+		<!--大轮播图-->
+		<div class="banner" id="banner">
+			
+			<ul id="baner-ul">
+				<!--<li class="hover"></li>
+				<li></li>
+				<li></li>-->
+			</ul>
+		</div>
+		<div class="flex-box-wrap">
+			<div class="flex-box">
+				<div><img src="img/flex1.jpg" alt="" /></div>
+				<div><img src="img/flex2.jpg" alt="" /></div>
+				<div><img src="img/flex3.jpg" alt="" /></div>
+				<div><img src="img/flex4.jpg" alt="" /></div>
+			</div>
+		</div>
+		
+		<!--小轮播 但官网没效果-->
+		<div class="sm-lb-wrap">
+			
+			<div class="sm-lb" id="smBaner">
+				
+				
+				<script type="text/html" id="smBanr">
+						<a href="javascript:;" id="prev"></a>
+				<a href="javascript:;" id="next"></a>
+				<ul class="moveBox">
+						{{each smBaner as item}}
+							<li>
+								
+									<img src="{{item.imgSrc}}"/>
+									<span>{{item.title}}</span><br />
+									<a href="shoplist.html">{{item.tit}}</a><br />
+									<span class="newPirce">{{item.newpirc}}</span>
+									<span>{{item.olipirc}}</span>
+								
+							</li>
+						{{/each}}
+				</ul>	
+				</script>
+				<script src="js/smLunbo.js" type="text/javascript" charset="utf-8"></script>
+			</div>
+		</div>
+		
+		
+		<!--热荐品牌-->
+		<div class="hot-wrap">
+			<div class="hot-w">
+				<div class="hot-l">
+					<div class="hot">
+						<spna class="hot-bar">热荐品牌</spna>
+						<span>HOT BRAND</span>
+					</div>
+					<a href="">欧美大牌</a>
+					<a href="">日韩品牌</a>
+					<a href="">其他品牌</a>
+				</div>
+				<div class="hot-r">
+					<a href="">防嗮隔离</a>
+					<a href="">面膜</a>
+					<a href="">补水</a>
+					<a href="">雅诗兰黛</a>
+					<a href="">水宝宝</a>
+					<a href="">兰蔻</a>
+					<a href="">美白</a>
+				</div>
+			</div>
+			
+			<div class="hot-shop">
+				<img src="img/x1.jpg" alt="" />
+				<img src="img/x2.jpg" alt="" />
+				<img src="img/x3.jpg" alt="" />
+				<img src="img/x4.jpg" alt="" />
+				<img src="img/x5.jpg" alt="" />
+				<img src="img/x6.jpg" alt="" />
+			</div>
+			<div class="shop-title">
+				<img src="img/s1.jpg" alt="" />
+				<img src="img/s2.jpg" alt="" />
+				<img src="img/s3.jpg" alt="" />
+				<img src="img/s4.jpg" alt="" />
+				<img src="img/s5.jpg" alt="" />
+				<img src="img/s6.jpg" alt="" />
+				<img src="img/s7.jpg" alt="" />
+				<img src="img/s1.jpg" alt="" />
+				<img src="img/s4.jpg" alt="" />
+			</div>
+		</div>
+		
+		
+		
+		<div class="hot-wrap">
+			<div class="hot-w" style="border-bottom-color: #E40C57;">
+				<div class="hot-l">
+					<div class="hot">
+						<spna class="hot-bar" style="color: #E40C57;">大牌小样</spna>
+						<span>SMALL SAMPLE</span>
+					</div>
+				</div>
+				<div class="hot-r">
+					<a href="">防嗮</a>
+					<a href="">隔离</a>
+					<a href="">面膜</a>
+					<a href="">补水</a>
+					<a href="">唇膏</a>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class="bigImg">
+			<img src="img/w2.jpg" class="bigImg-l"/>
+			<img src="img/w1.jpg" class="bigImg-r"/>		
+		</div>
+		
+		<!--会动的轮播-->
+		
+		<div class="lubo-wrap" id="lb-wrap">
+			<a href="javascript:;" class="prev"></a>
+			<a href="javascript:;" class="next"></a>
+			<div class="lubo" id="lubo">
+				
+				<script type="text/html" id="movelunbo">
+					
+					{{each baner as val}}
+						<div class="lubo-s">
+							{{each val as item}}
+								<div>
+									<img src="{{item.imgSrc}}"/>
+									<span>{{item.title}}</span><br />
+									<a href="shoplist.html">{{item.tit}}</a><br />
+									<span class="newPirce">{{item.newpirc}}</span>
+									<span>{{item.olipirc}}</span>
+								</div>
+										
+							{{/each}}
+								
+						</div>
+					{{/each}}
+				</script>	
+			</div>
+		</div>
+		
+		
+		<div class="hot-wrap">
+			<div class="hot-w" style="border-bottom-color: #E40C57;">
+				<div class="hot-l">
+					<div class="hot">
+						<spna class="hot-bar" style="color: #E40C57;">套装礼盒</spna>
+						<span>GIFT SET</span>
+					</div>
+				</div>
+				<div class="hot-r">
+					<a href="shoplist.html">女士香水</a>
+					<a href="shoplist.html">护手霜</a>
+					<a href="shoplist.html">身体乳</a>
+					<a href="shoplist.html">面膜</a>
+					<a href="shoplist.html">雅诗兰黛</a>
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class="bigImg">
+			<img src="img/j1.jpg" class="bigImg-l"/>
+			<img src="img/j2.jpg" class="bigImg-r"/>		
+		</div>
+		
+		<!--会动的轮播222222222222-->
+		<div class="lubo-wrap" id="lb-wrap1">
+			<a href="javascript:;" class="prev"></a>
+			<a href="javascript:;" class="next"></a>
+			<div class="lubo" id="lubo1">
+				
+				<script type="text/html" id="movelunbo1">
+					
+					{{each baner as val}}
+						<div class="lubo-s">
+							{{each val as item}}
+								<div>
+									<img src="{{item.imgSrc}}"/>
+									<span>{{item.title}}</span><br />
+									<a href="shoplist.html">{{item.tit}}</a><br />
+									<span class="newPirce">{{item.newpirc}}</span>
+									<span>{{item.olipirc}}</span>
+								</div>
+										
+							{{/each}}
+								
+						</div>
+					{{/each}}
+				</script>	
+			</div>
+		</div>
+		
+		<div class="dir-wrap">
+			<div>
+				<img src="img/dir.jpg"/>
+			</div>
+		</div>
+		
+		<!--面部护肤-->
+		<div class="hot-wrap">
+			<div class="hot-w" style="border-bottom-color: #E40C57;">
+				<div class="hot-l">
+					<div class="hot">
+						<spna class="hot-bar" style="color: #E40C57;">面部护肤</spna>
+						<span>SKIN CARE</span>
+					</div>
+				</div>
+				<div class="hot-r">
+					<a href="">洁面</a>
+					<a href="">乳液</a>
+					<a href="">化妆水</a>
+					<a href="">精华</a>
+					<a href="">眼霜</a>
+				</div>
+			</div>
+		</div>
+		<div class="skin-wrap">
+			<div class="skin">
+				<div class="sm-baner" id="banner1">
+					<!--<img src="img/sm-banner1.jpg" alt="" />-->
+					<ul class="oUl" id="oul1">
+						<li><a href=""><img src="img/sm-banner1.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/sm-banner2.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/sm-banner3.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="navlist" id="navlist1">
+						<!--<li ></li>
+						<li></li>
+						<li></li>-->
+					</ul>
+				</div>
+				<div class="skin-f">
+					<img src="img/skin1.jpg" alt="" class="img1"/>
+					<img src="img/skin3.jpg" alt="" class="img3"/>
+					<img src="img/skin2.jpg" alt="" class="img2"/>
+					<img src="img/skin4.jpg" alt="" />
+				</div>
+				<div class="skin-f1">
+					<img src="img/skin5.jpg"/>
+					<img src="img/skin6.jpg" class="img6"/>
+					<img src="img/skin7.jpg" class="img7"/>
+				</div>
+			</div>
+		</div>
+		
+		<!--面部护肤结束-->
+		<!--时尚彩妆-->
+		<div class="hot-wrap">
+			<div class="hot-w" style="border-bottom-color: #8a5bab;">
+				<div class="hot-l">
+					<div class="hot">
+						<spna class="hot-bar" style="color: #8a5bab;">时尚彩妆</spna>
+						<span>FASHION MAKEUP</span>
+					</div>
+				</div>
+				<div class="hot-r">
+					<a href="">洁面</a>
+					<a href="">乳液</a>
+					<a href="">化妆水</a>
+					<a href="">精华</a>
+					<a href="">眼霜</a>
+				</div>
+			</div>
+		</div>
+		<div class="skin-wrap">
+			<div class="skin">
+				<div class="sm-baner" id="banner2">
+					<ul class="oUl" id="oul2">
+						<li><a href=""><img src="img/sm-banner1.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/sm-banner2.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/sm-banner3.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="navlist" id="navlist2">
+						<!--<li ></li>
+						<li></li>
+						<li></li>-->
+					</ul>
+				</div>
+				<div class="skin-f">
+					<img src="img/skin1.jpg" alt="" class="img1"/>
+					<img src="img/skin3.jpg" alt="" class="img3"/>
+					<img src="img/skin2.jpg" alt="" class="img2"/>
+					<img src="img/skin4.jpg" alt="" />
+				</div>
+				<div class="skin-f1">
+					<img src="img/skin5.jpg"/>
+					<img src="img/skin6.jpg" class="img6"/>
+					<img src="img/skin7.jpg" class="img7"/>
+				</div>
+			</div>
+		</div>
+		
+		<!--时尚彩妆结束-->
+		<!--美体香氛-->
+		<div class="hot-wrap">
+			<div class="hot-w" style="border-bottom-color: #e67936;">
+				<div class="hot-l">
+					<div class="hot">
+						<spna class="hot-bar" style="color: #e67936;">美体香氛</spna>
+						<span>BADY FRAGRANCE</span>
+					</div>
+				</div>
+				<div class="hot-r">
+					<a href="">洁面</a>
+					<a href="">乳液</a>
+					<a href="">化妆水</a>
+					<a href="">精华</a>
+					<a href="">眼霜</a>
+				</div>
+			</div>
+		</div>
+		<div class="skin-wrap">
+			<div class="skin">
+				<div class="sm-baner" id="banner3">
+					<ul class="oUl" id="oul3">
+						<li><a href=""><img src="img/sm-banner1.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/sm-banner2.jpg" alt="" /></a></li>
+						<li><a href=""><img src="img/sm-banner3.jpg" alt="" /></a></li>
+					</ul>
+					<ul class="navlist" id="navlist3">
+						<!--<li ></li>
+						<li></li>
+						<li></li>-->
+					</ul>
+				</div>
+				<div class="skin-f">
+					<img src="img/skin1.jpg" alt="" class="img1"/>
+					<img src="img/skin3.jpg" alt="" class="img3"/>
+					<img src="img/skin2.jpg" alt="" class="img2"/>
+					<img src="img/skin4.jpg" alt="" />
+				</div>
+				<div class="skin-f1">
+					<img src="img/skin5.jpg"/>
+					<img src="img/skin6.jpg" class="img6"/>
+					<img src="img/skin7.jpg" class="img7"/>
+				</div>
+			</div>
+		</div>
+		
+		<!--美体香氛结束-->
+		
+		
+		<div class="bottom-wrap">
+			<div class="bottom">
+				<div class="info">
+					<p><span></span>在线客服</p>
+					<p><span></span>kf@higoo.com</p>
+					<p class="tel"><span></span>4007-600-600 <br />
+						<em>AM 08:00-PM 24:00</em>
+					</p>
+				</div>
+				
+				<div class="aList First">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				
+				<div class="aList">
+					<a href="" class="first">购物指南</a>
+					<a href="">购物流程</a>
+					<a href="">常见问题</a>
+					<a href="">通关关税</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">支付/配送</a>
+					<a href="">配送说明</a>
+					<a href="">支付方式</a>
+					<a href="">运费标准</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				<div class="aList">
+					<a href="" class="first">嗨购特色</a>
+					<a href="">正品保障</a>
+					<a href="">物流保障</a>
+					<a href="">绿色通过</a>
+					<a href="">护肤宝典</a>
+				</div>
+				
+				
+				<dl class="weixin">
+					<dt>嗨购微信</dt>
+					<dd>
+						<img src="img/weixin.jpg"/>
+					</dd>
+					
+					<dd>扫一扫 品质在手</dd>
+				</dl>
+			</div>
+		</div>
+		
+		<div class="posiBox" id="posiBox">
+			<img src="img/p2.jpg"/>
+			<a href="shopcart.html"><img src="img/p1.jpg"/></a>
+			<img src="img/p3.jpg"/>
+			<img src="img/p4.jpg" id="goTop"/>
+		</div>
+		
+		<!--footer-->
+		<footer>
+			<div class="fot">
+				<img src="img/footer.jpg"/>
+			</div>
+		</footer>
+	</body>
+	
+</html>

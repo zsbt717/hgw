@@ -1,0 +1,215 @@
+$ahovr :#e40c57;
+$width:1200px;
+$mg:0 auto;
+$useSelect:none; 
+#navTab{
+    display: none;
+}
+
+.cart-wrap{
+    width: 100%;
+    
+    .cartxq{
+        width: $width;
+        margin: $mg;
+        
+        h2{
+            font-size: 24px;
+            color: #706666;
+            font-weight: 500;
+        }
+        
+        .buzou{
+            margin: 20px 0;
+            span{
+                display: inline-block;
+                width: 323px;
+                height: 30px;
+                padding-left: 12px;
+                 font-size: 16px;
+                 line-height: 30px;
+            }
+            em{
+                font-style: normal;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background-color: #FFFFFF;
+                line-height: 20px;
+                text-align: center;
+                margin-right: 3px;
+                
+            }
+            .first{
+                background-color: #860c83;
+                color: #FFFFFF;
+               
+                line-height: 30px;
+                em{
+                    color: #faadae;
+                }
+            }
+            .two{
+                margin: 0 93px;
+                color: #8c8c8c;
+                background-color: #efefef;
+                em{
+                    background-color: #cbcbcb;
+                    color: #FFFFFF;
+                }
+                &:hover{
+                    background-color: #ffba06;
+                    cursor: pointer;
+                }
+            }
+            .three{
+                color: #8c8c8c;
+                background-color: #efefef;
+                em{
+                    background-color: #cbcbcb;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        
+        .yxsp{
+            color: #666666;
+            font-size: 16px;
+        }
+        
+        .spList{
+            border: 1px solid #CCCCCC;
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            thead{
+                
+                height: 33px;
+                line-height: 35px;
+                td{
+                    background-color: #efefef;
+                }
+            }
+            .shop{
+                width: 350px;
+            }
+            .make{
+                width: 250px;
+            }
+            td{ background-color: #FFFFFF;
+                padding: 5px 0px;
+                width: 100px;
+                text-align: center;
+                vertical-align: top;
+                img{
+                    width: 79px;
+                    height: 79px;
+                    border: 1px solid #CCCCCC;
+                    text-align: center;
+                    margin: $mg;
+                }
+            }
+            
+            .next,.prev{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                border: 1px solid #CCCCCC;
+                text-align: center;
+                line-height: 20px;
+                margin-top: -1px;
+                line-height: 20px;
+            }
+            .txt{
+                width: 30px;
+                height: 18px;
+                border: 1px solid #CCCCCC;
+                text-align: center;
+                margin: 0 -3px;
+            }
+            .shopcart{
+                border-bottom: 1px solid #CCCCCC;
+            }
+            .fottop{
+                text-align: right;
+                height: 80px;
+                padding: 15px;
+                p{
+                    font-size: 14px;
+                    line-height: 30px;
+                    span{
+                        color: #fe6052;
+                    }
+                    
+                }
+                .last{
+                        font-weight: 700;
+                }
+            }
+            
+            tfoot{
+                border: 1px solid #CCCCCC;
+                
+                
+                .tfirst{
+                    text-align: left;
+                    height: 60px;
+                   background-color: #efefef;
+                   line-height: 60px;
+                   padding-left: 20px;
+                   span{
+                       display: inline-block;
+                       width: 70px;
+                       height: 20px;
+                       border: 1px solid #CCCCCC;
+                       text-align: center;
+                       line-height: 20px;
+                       margin-right: 15px;
+                       cursor: pointer;
+                   }
+                   .clearCart{
+                       background-color: #fff;
+                       &:hover{
+                           background-color: #8C8C8C;
+                       }
+                   }
+                   .addshop{
+                       color: #FFFFFF;
+                       background-color: #840f83;
+                       &:hover{
+                           background-color: orangered;
+                       }
+                   }
+                }
+                .tTwo{
+                    background-color: #efefef;
+                    text-align: right;
+                    padding-right: 15px;
+                    line-height: 60px;
+                    .comeon{
+                        text-decoration: underline;
+                        margin-right: 15px;
+                        &:hover{
+                            color: $ahovr;
+                            text-decoration: none;
+                        }
+                    }
+                    .jiesuan{
+                        display: inline-block;
+                        height: 40px;
+                        width: 140px;
+                        background-color: #860C83;
+                        color: #FFFFFF;
+                        text-align: center;
+                        line-height: 40px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+           
+        }
+        
+    }
+    
+}
